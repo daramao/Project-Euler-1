@@ -13,6 +13,5 @@ function numbers (){
 	}
 	document.write(sum);
 	}
-	
+
 	numbers ();
-	
