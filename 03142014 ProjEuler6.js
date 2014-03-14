@@ -8,7 +8,7 @@ Project: To solve Project Euler #6 (Find the difference between square of sum of
 //Part 1  Sum of squared first 100 numbers
 var sumA=0;
 for (var i=0; i<=100; i++){
-sumA+=Math.pow(i,2);
+	sumA+=Math.pow(i,2);
 }
 
 
