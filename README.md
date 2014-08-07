@@ -1,4 +1,4 @@
-Project-Euler-1
+Project-Euler
 ===============
 https://projecteuler.net/problems
 
