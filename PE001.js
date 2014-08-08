@@ -1,4 +1,4 @@
-/* 
+/*
 Author: Dara Mao
 Date: 03-12-2014
 Project: To solve Project Euler #1 (Find the sum of all the multiples of 3 or 5 below 1000.)
@@ -11,7 +11,7 @@ function numbers (){
 	sum += i;
 	}
 	}
-	document.write(sum);
+	console.log(sum);
 	}
 
 	numbers ();
