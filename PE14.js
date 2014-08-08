@@ -1,47 +1,39 @@
 // PE # 14 : Longest Collatz sequence
 // 08/07/2014
 
+
 function CollatzSeq(n) {
 
-    for (var i = n; i > 1; i--) {
+    arrayLength = [];
 
-        // while (n != 1) {
-        if (i % 2 === 0) {
-            i = i / 2;
-        } else {
-            i = 3 * i + 1;
+    for (var i= n; i >= 1;i--){
+        x = i;
+        var array = [x];
+
+        function baseCond (x){
+            if (x % 2 === 0){
+                x = x / 2;
+            } else  {
+                 x = 3 * x + 1;
+            }
         }
-        var total = [];
-        var array = [n];
-        total = array.push(i);
-        // console.log(total);
-        // return total;
-        // }
-        console.log(i);
-        // console.log(total);
-        return total;
+
+        array.push(i+"hi");
+
+        while (x > 1 ){
+//Need to refactor 08/08/2014
+            if (x % 2 === 0){
+                x = x / 2;
+            } else  {
+                 x = 3 * x + 1;
+            }
+            array.push(x);
+        }
+
+    length = array.length;
+    arrayLength.push(length);
+    var max = Math.max.apply(Math, arrayLength);
+    console.log(max);
     }
-
 }
-
-CollatzSeq(10);
-
-// var n = 2;
-// var total = [];
-// var array = [n];
-
-// while (n != 1) {
-//     if (n % 2 === 0) {
-//         n = n / 2;
-//     } else {
-//         n = 3 * n + 1;
-//     }
-//     total = array.push(n);
-//     console.log(total);
-// }
-
-// var array = [1, 2, 3];
-// array.forEach(function(x) {
-//     console.log(x * 2);
-//     return x * 2;
-// });
+CollatzSeq(1000000);
