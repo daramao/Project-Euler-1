@@ -33,7 +33,11 @@ function CollatzSeq(n) {
         arrayLength.push(length);
         var max = Math.max.apply(Math, arrayLength);
         console.log(max);
+        console.log(array[0]);
         }
 }
 
 CollatzSeq(1000000);
+
+
+
