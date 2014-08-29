@@ -1,5 +1,5 @@
-Project-Euler
+Project Euler
 ===============
 https://projecteuler.net/problems
 
-Solving Project Euler problems using JavaScript
+My solutions to Project Euler problems using Ruby and JavaScript.
